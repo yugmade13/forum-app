@@ -4,8 +4,7 @@
  *   - should display alert when name is empty
  *   - should display alert when email is empty
  *   - should display alert when password is empty
- *   - should display alert when email is already used
- *   - should display navigate to login page when user registered
+ *   - should display navigate to login page when user registered [Disconnected]
  */
 
 describe('Register spec', () => {

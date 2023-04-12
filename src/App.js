@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
+import './styles/css/App.css';
 import Layout from './pages/Layout.jsx';
 import Home from './pages/Home';
 import Leaderboards from './pages/Leaderboards.jsx';

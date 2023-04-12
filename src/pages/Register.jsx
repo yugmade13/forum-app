@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { asyncRegisterUser } from '../states/user/action.js';
 import useInput from '../hooks/useInput.jsx';
+import StyledGlobal from '../styles/components/StyledGlobal';
+import SignCard from '../styles/components/SignCard';
 
 function Register() {
   const dispatch = useDispatch();
@@ -36,8 +38,8 @@ function Register() {
   }
 
   return (
-    <div className="app-sign">
-      <div className="wrapper">
+    <StyledGlobal>
+      <SignCard>
         <h1>Daftar</h1>
         <form onSubmit={handleRegister} data-testid="form">
           <input
@@ -68,8 +70,8 @@ function Register() {
           Sudah punya akun?
           <Link to="/login"> Masuk</Link>
         </span>
-      </div>
-    </div>
+      </SignCard>
+    </StyledGlobal>
   );
 }
 
