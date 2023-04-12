@@ -2,10 +2,11 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navigation from '../components/Navigation.jsx';
 import Loading from '../components/Loading.jsx';
+import AppContainer from '../styles/components/AppContainer';
 
 function Layout() {
   return (
-    <div className="app-container">
+    <AppContainer>
       <Loading />
       <header>
         <Navigation />
@@ -13,7 +14,7 @@ function Layout() {
       <main>
         <Outlet />
       </main>
-    </div>
+    </AppContainer>
   );
 }
 

@@ -72,7 +72,6 @@ nav {
     left: 0;
     right: 0;
     margin: auto;
-    /*border-radius: 25px 25px 0 0;*/
     border: 2px solid var(--color-grey);
 }
 
@@ -98,61 +97,6 @@ nav ul span {
 .app-loading {
     position: relative;
     top: -8px;
-}
-
-/* Login Register */
-.app-sign {
-    width: 100%;
-    height: 100vh;
-    background: var(--color-grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.app-sign .wrapper {
-    width: 375px;
-    background: #fff;
-    color: #252525;
-    padding: 24px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-.app-sign .wrapper h1 {
-    text-align: center;
-    font-size: 24px;
-}
-
-.app-sign .wrapper input {
-    margin-bottom: 12px;
-    background: var(--color-grey);
-    width: 100%;
-    border-radius: 25px;
-}
-
-.app-sign .wrapper button {
-    display: block;
-    background: var(--color-blue);
-    width: 100%;
-    padding: 8px;
-    border-radius: 25px;
-    color: var(--color-white);
-}
-
-.app-sign .wrapper span {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-}
-
-.app-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto 0;
 }
 
 .app-bar {

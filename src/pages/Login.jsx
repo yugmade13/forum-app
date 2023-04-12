@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import useInput from '../hooks/useInput.jsx';
 import { asyncSetAuthUser } from '../states/authUser/action.js';
+import StyledGlobal from '../styles/components/StyledGlobal';
+import SignCard from '../styles/components/SignCard';
 
 function Login() {
   const dispatch = useDispatch();
@@ -36,8 +38,8 @@ function Login() {
   }
 
   return (
-    <div className="app-sign">
-      <div className="wrapper">
+    <StyledGlobal>
+      <SignCard>
         <h1>Masuk</h1>
         <form onSubmit={handleLogin}>
           <input
@@ -62,8 +64,8 @@ function Login() {
           Belum punya akun?
           <Link to="/register"> Daftar</Link>
         </span>
-      </div>
-    </div>
+      </SignCard>
+    </StyledGlobal>
   );
 }
 
