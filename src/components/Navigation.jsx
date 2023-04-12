@@ -21,16 +21,27 @@ function Navigation() {
     <>
       <nav>
         <ul>
-          <Link to="/"><BsChatQuoteFill /></Link>
-          <Link to="/leaderboards"><BiLineChart /></Link>
+          <Link to="/">
+            <span>Threads</span>
+            <BsChatQuoteFill />
+          </Link>
+          <Link to="/leaderboards">
+            <span>Leaderboars</span>
+            <BiLineChart />
+          </Link>
           {authUser === null
-            ? <Link to="/login"><AiOutlineLogin /></Link>
+            ? (
+              <Link to="/login">
+                <span>Login</span>
+                <AiOutlineLogin />
+              </Link>
+            )
             : (
               <button
-                width="auto"
                 type="button"
                 onClick={handleLogout}
               >
+                <span>Logout</span>
                 <AiOutlineLogout />
               </button>
             )}
