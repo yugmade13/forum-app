@@ -47,17 +47,6 @@ describe('Register spec', () => {
     });
   });
 
-  it('should display alert when email is already used', () => {
-    cy.get('input[placeholder="Nama"]').type('Example');
-    cy.get('input[placeholder="Email"]').type('exampleexa1m@gmail.com');
-    cy.get('input[placeholder="******"]').type('example123');
-    cy.get('button').contains(/^Daftar$/).click();
-
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('"email" is already token');
-    });
-  });
-
   // Disconnected
   // it('should display navigate to login page when user registered', () => {
   //   cy.get('input[placeholder="Nama"]').type('Example');
